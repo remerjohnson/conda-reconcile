@@ -25,23 +25,78 @@ Conda Navigator has an intuitive GUI for looking at your conda environments, but
 
 + Download the YAML (`.yml`) file from this repo or clone it however you normally use GitHub.
 
-_For using the command line, Git Shell will work nicely. Or you can use "Anaconda Console" which you got when you installed Anaconda._  
+_NOTE: For using the command line, Git Shell (that gets installed with GitHub Desktop) or Git Bash will work nicely. Or you can use "Anaconda Console" which you got when you installed Anaconda._  
 
-+ Open your shell, and navigate to where you downloaded the YAML file from this repo. Then type:
++ Open your shell, and navigate (via `cd`) to where you downloaded the YAML file from this repo. Alternatively, if you have the Git Bash program installed, you can right-click in the directory with the YAML file and select the "Git Bash here" option from the context menu.  
++ Type:  
 ```
 $ conda env create -f openrefine.yml
 ```  
 
-+ The environment will now be installed, and it should now show up in the Anaconda 'Environments' tab. We're now ready to use the reconciliation scripts.
++ The environment will now be installed, and it should now show up back in the Anaconda Navigator 'Environments' tab as `refine3`.
+
++ Now go back to your shell. We want to switch into our new environment. In conda, we do that by typing:
+
+```
+$ source activate refine3
+```
+
+If your shell complains, instead drop the `source` part:
+```
+activate refine3
+```
+
+Depending on your shell, it will probably now say `(refine3)` somewhere on your command prompt. We're now ready to grab and use the reconciliation scripts.
 
 ## Specific Reconcilation Services Breakdown
 
 Now that we have a proper environment set up, we can call the desired service when needed, then let OpenRefine know where to listen in on our local computer to use it.
 
-### FAST
+### FAST reconciliation
+
+I have a forked version of the FAST reconciliation script called [fast-reconcile](https://github.com/remerjohnson/fast-reconcile).  
+
++ Clone the repo.
++ In your shell while in the refine3 environment, `cd` in, and type:
+
+```
+$ python reconcile.py
+```
++ The shell should report that the service is running and note which port, something like `Running on http://0.0.0.0:5000/`.
++ Open OpenRefine, select the column you would like to reconcile, click on the arrow at the top, choose `Reconcile` > `Start Reconciling...`
++ Click on the Add Standard Service button in the bottom left corner.
++ Now enter the URL that the local service is running on - it should be `http://localhost:5000/reconcile`
++ You should now be greeted by a list of possible reconciliation types for the service. Choose your desired options and then click `Start Reconciling`.
++ Whenever you are finished and wish to close the service down, hit `Ctrl` + `C` to stop it. 
 
 ### GeoNames
 
+We will use Christina Harlow's service [geonames-reconcile](https://github.com/cmh2166/geonames-reconcile).  
+
+The instructions are the same as above for FAST, except one crucial bit: it relies on a GeoNames API user name. So first:
+
++ Go to the [login page](http://www.geonames.org/login) and register. After your account is activated, [enable it for free web services](http://www.geonames.org/manageaccount).
++ Once you have your GeoNames username, create an environment variable on your computer with your Geonames username as so:
+  + Open your shell
+  + Type in `$ export GEONAMES_USERNAME="username"` (replacing username with your username)
++ Proceed as above in the FAST reconciliation
+
 ### Library of Congress (id.loc.gov)
 
+We will use Christina Harlow's service [lc-reconcile](https://github.com/cmh2166/lc-reconcile).
+
+The instructions are the same as above for FAST, except the local URL to use when selecting `Standard Service` in OpenRefine is `http://localhost:5000/`.
+
+Optionally, you could ignore this local version and run the hosted verion by putting instead the URL `http://lc-reconcile.cmh2166.webfactional.com/`.  
+
 ### VIAF (Note: not provided for in this repo)
+
+Although there used to be a python-based VIAF reconciliation service, it has since moved to a much bigger Java-based framework called [conciliator](https://github.com/codeforkjeff/conciliator).  
+
+Conciliator has grown to provide reconciliation for way more than just VIAF, including ORCID, and any Solr data source.
+
+Since Java set up is beyond the scope of this repo, read the manual, and [use the hosted version of conciliator](http://refine.codefork.com/) if you don't wish to install it locally.  
+
+## Further Resources
+
++ [Conda cheat sheet](https://conda.io/docs/using/cheatsheet.html)
