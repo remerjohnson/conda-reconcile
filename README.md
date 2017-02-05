@@ -9,9 +9,13 @@ To avoid this, we will rely on a python environment set up by [Anaconda](https:/
 
 Once Anaconda is installed, setting up the environment becomes copying and pasting one line on the command line.  
 
-## Pre-requisite installation of Anaconda3
+**NOTE:** For this particular repo, we are assuming a Windows user. This is the use case I am faced with, but it would in general work on other systems following those systems' instructions.
 
-**NOTE:** For this particular repo, we are assuming a Windows user. This is the use case I am faced with, but it would in general work on other systems following those systems' instructions.  
+## Pre-requisite installation of Microsoft C++ Build Tools
+
+One first pre-requisite: Microsoft needs some special "build tools" to work with certain python libraries. Visit the [Visual C++ Build Tools page](http://landinghub.visualstudio.com/visual-cpp-build-tools) and select the "Download Visual C++ Build Tools 2015" option. Let the installer run, and go get some coffee, because it might take a while.
+
+## Pre-requisite installation of Anaconda3
 
 + Uninstall previous versions of Anaconda on your computer, if they exist.
 + Download the latest version of [Anaconda3 for Windows](https://www.continuum.io/downloads), selecting the Python 3.x version 64-bit installer.  
@@ -67,7 +71,7 @@ $ python reconcile.py
 + Click on the Add Standard Service button in the bottom left corner.
 + Now enter the URL that the local service is running on - it should be `http://localhost:5000/reconcile`
 + You should now be greeted by a list of possible reconciliation types for the service. Choose your desired options and then click `Start Reconciling`.
-+ Whenever you are finished and wish to close the service down, hit `Ctrl` + `C` to stop it. 
++ Whenever you are finished and wish to close the service down, hit `Ctrl` + `C` to stop it.
 
 ### GeoNames
 
