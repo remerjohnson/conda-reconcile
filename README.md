@@ -9,7 +9,7 @@ To avoid this, we will rely on a python environment set up by [Anaconda](https:/
 
 Once Anaconda is installed, setting up the environment becomes copying and pasting one line on the command line.  
 
-**NOTE:** For this particular repo, we are assuming a Windows user. This is the use case I am faced with, but it would in general work on other systems following those systems' instructions.
+**NOTE:** For this particular repo, we are assuming a Windows user. This is the use case I am faced with, but it would in general work on other systems following those systems' instructions. This environment has been successfully built on Windows7 and Windows10 machines.
 
 ## Pre-requisite installation of Microsoft C++ Build Tools
 
@@ -104,3 +104,7 @@ Since Java set up is beyond the scope of this repo, read the manual, and [use th
 ## Further Resources
 
 + [Conda cheat sheet](https://conda.io/docs/using/cheatsheet.html)
+
+## Next Steps
+
+Make a Vagrant box to automate this further. 
