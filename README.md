@@ -101,10 +101,14 @@ Conciliator has grown to provide reconciliation for way more than just VIAF, inc
 
 Since Java set up is beyond the scope of this repo, read the manual, and [use the hosted version of conciliator](http://refine.codefork.com/) if you don't wish to install it locally.  
 
+### Wikidata (Note: not provided for in this repo)
+
+Wikidata reconciliation is quickly becoming a highly-desired ability, and the latest development is that @wetneb has provided a [Wikidata Hosted Reconciliation Service](https://tools.wmflabs.org/openrefine-wikidata/). In order to use it, simply choose to reconcile a column in OpenRefine, then add the API endpoint as a "Standard Service": [https://tools.wmflabs.org/openrefine-wikidata/en/api]().   
+
 ## Further Resources
 
 + [Conda cheat sheet](https://conda.io/docs/using/cheatsheet.html)
 
 ## Next Steps
 
-Make a Vagrant box to automate this further. 
+Make a Vagrant box to automate this further.
