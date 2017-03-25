@@ -7,7 +7,7 @@ OpenRefine provides a crucial tool in linked data reconciliation (AKA, "from str
 
 To avoid this, we will rely on a python environment I have made with [Anaconda](https://conda.io/docs/intro.html). Anaconda makes python virtual environments so that you can tailor one to a specific task or program (thus avoiding the previously mentioned dependency hell). Making a virtual environment ensures that we can switch into it whenever we want to reconcile stuff in OpenRefine, and switch back out when we want to do other python stuff (there's [lots of other cool python and other programming stuff](http://programminghistorian.org/lessons/) you can do!).  
 
-If you're curious what types of libraries are included, they mainly have to do with [SPARQL](https://en.wikipedia.org/wiki/SPARQL) to query linked data sources, as well as common libraries that are designed to interact with APIs, and finally libraries that attempt ("fuzzy matching")[https://en.wikipedia.org/wiki/Record_linkage#Probabilistic_record_linkage].  
+If you're curious what types of libraries are included, they mainly have to do with [SPARQL](https://en.wikipedia.org/wiki/SPARQL) to query linked data sources, as well as common libraries that are designed to interact with APIs, and finally libraries that attempt ["fuzzy matching"](https://en.wikipedia.org/wiki/Record_linkage#Probabilistic_record_linkage).  
 
 Once Anaconda is installed, setting up the environment becomes copying and pasting one line on the command line.  
 
