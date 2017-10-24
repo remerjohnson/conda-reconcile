@@ -6,9 +6,9 @@
 + Download [Anaconda3](https://www.continuum.io/downloads), selecting the Python 3.x version 64-bit installer, and install it.    
   + **(Windows)** During installation use the default settings, and ensure the boxes that add `conda` to your PATH are checked.
 
-## Set up this `conda` environment
+## Setup this `conda` environment
 
-+ Download the YAML (`.yml`) file from this repo or clone it.
++ Download the YAML (`openrefine.yml`) file from this repo or clone it.
 + `cd` to where you downloaded the YAML file.
 + Create the `conda` environment from the YAML file:  
 ```
@@ -27,7 +27,7 @@ Depending on your shell, it should say `(refine3)` in your command prompt.
 
 ## Next steps
 
-Download and run (via `python scriptname.py`) the [reconciliation services](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown) for your desired vocabulary:
+Download and run (via `python script_name.py`) the [reconciliation services](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown) for your desired vocabulary:
 + [FAST](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#fast-reconciliation)  
 + [GeoNames](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#geonames) (**Note:** requires special setup of API user account)
 + [Library of Congress](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#library-of-congress-idlocgov)
