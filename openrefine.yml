@@ -10,7 +10,6 @@ dependencies:
 - openssl=1.0.2h
 - pip=9.0.1=py35_1
 - python=3.5.2=0
-- pyreadline=2.1
 - requests=2.12.4=py35_0
 - setuptools=27.2.0=py35_0
 - sqlite=3.13.0
@@ -23,6 +22,7 @@ dependencies:
   - isodate==0.5.4
   - keepalive==0.5
   - pyparsing==2.1.9
+  - pyreadline==2.1
   - python-levenshtein==0.12.0
   - rdflib==4.2.1
   - six==1.10.0
