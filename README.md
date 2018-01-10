@@ -18,7 +18,7 @@ $ conda env create -f openrefine.yml
 ```
 $ source activate refine3
 ```
-+ If your shell complains, instead drop the `source` part:
++ If your shell complains (and/or you are using [Anaconda Prompt](https://conda.io/docs/user-guide/install/windows.html#updating-conda)), instead drop the `source` part:
 ```
 $ activate refine3
 ```
@@ -27,11 +27,16 @@ Depending on your shell, it should say `(refine3)` in your command prompt.
 
 ## Next steps
 
-Make sure you have activated the environment as per above (you must see a `refine3` in your prompt). Then clone a service from below, `cd` into that directory, and run the reconciliation service via `python script_name.py`:
-+ [FAST](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#fast-reconciliation)  
-+ [GeoNames](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#geonames) (**Note:** requires special setup of API user account)
-+ [Library of Congress](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#library-of-congress-idlocgov)
-+ [VIAF](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#viaf-note-not-provided-for-in-this-repo)
-+ [Wikidata](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#wikidata-note-not-provided-for-in-this-repo) (**Note:** newer versions of OpenRefine have built-in reconciliation to Wikidata)
-
-If you get stuck, [here's a longer breakdown](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown)
+Make sure you have activated the environment as per above (you must see a `refine3` in your prompt).
++ Download or clone an existing reconciliation service
+  + [FAST](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#fast-reconciliation)  
+  + [GeoNames](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#geonames) (**Note:** requires special setup of API user account)
+  + [Library of Congress](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#library-of-congress-idlocgov)
+  + [VIAF](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#viaf-note-not-provided-for-in-this-repo)
+  + [Wikidata](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown#wikidata-note-not-provided-for-in-this-repo) (**Note:** newer versions of OpenRefine have built-in reconciliation to Wikidata)
++ Open your shell
+  + `cd` to where you saved the reconciliation service
+  + Run it (It runs in the background. You will connect to it via OpenRefine)
+    + `$ python script_name.py`
++ Open OpenRefine to begin [reconciliation](http://freeyourmetadata.org/reconciliation/)
+  + [Detailed instructions](https://github.com/remerjohnson/conda-reconcile/wiki/Linked-Data-Reconciliation-Services-Breakdown) on running the reconciliation.
