@@ -3,7 +3,7 @@
 ## Pre-requisite Anaconda installation
 
 + **(Windows-only)** [Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools): select the "Download Visual C++ Build Tools 2015" option.  
-+ Download [Anaconda3](https://www.continuum.io/downloads), selecting the Python 3.x version 64-bit installer, and install it.    
++ Download [Anaconda3](https://www.anaconda.com/distribution/), selecting the Python 3.x version 64-bit installer, and install it.    
   + **(Windows)** During installation use the default settings, and ensure the boxes that add `conda` to your PATH are checked.
 
 ## Setup this `conda` environment
