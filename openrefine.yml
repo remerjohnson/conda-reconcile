@@ -8,7 +8,7 @@ dependencies:
 - jinja2=2.8=py35_0
 - markupsafe=0.23=py35_2
 - openssl=1.0.2h
-- pip=9.0.1=py35_1
+- pip=10.0.1=py35_0
 - python=3.5.2=0
 - requests=2.12.4=py35_0
 - setuptools=27.2.0=py35_0
@@ -17,15 +17,15 @@ dependencies:
 - wheel=0.29.0=py35_0
 - zlib=1.2.8
 - pip:
-  - fuzzywuzzy==0.11.0
-  - html5lib==0.999999999
-  - isodate==0.5.4
-  - keepalive==0.5
-  - pyparsing==2.1.9
-  - pyreadline==2.1
-  - python-levenshtein==0.12.0
-  - rdflib==4.2.1
-  - six==1.10.0
-  - sparqlwrapper==1.8.0
-  - webencodings==0.5
+  - fuzzywuzzy
+  - html5lib
+  - isodate
+  - keepalive
+  - pyparsing
+  - pyreadline
+  - python-Levenshtein
+  - rdflib
+  - six
+  - SPARQLWrapper
+  - webencodings
 prefix: /home/zelgius/anaconda3/envs/refine
