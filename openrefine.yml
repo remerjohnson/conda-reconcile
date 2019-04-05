@@ -2,20 +2,20 @@ name: refine3
 channels:
 - defaults
 dependencies:
-- click=6.6=py35_0
-- flask=0.11.1=py35_0
-- itsdangerous=0.24=py35_0
-- jinja2=2.8=py35_0
-- markupsafe=0.23=py35_2
-- openssl=1.0.2h
-- pip=10.0.1=py35_0
-- python=3.5.2=0
-- requests=2.12.4=py35_0
-- setuptools=27.2.0=py35_0
-- sqlite=3.13.0
-- werkzeug=0.11.10=py35_0
-- wheel=0.29.0=py35_0
-- zlib=1.2.8
+- click=7.0=py37_0
+- flask=1.0.2=py37_1
+- itsdangerous=1.1.0=py37_0
+- jinja2=2.10=py37_0
+- markupsafe=1.1.1
+- openssl=1.1.1b
+- pip=19.0.3=py37_0
+- python=3.7.3
+- requests=2.21.0=py37_0
+- setuptools=40.8.0=py37_0
+- sqlite=3.27.2
+- werkzeug=0.14.1=py37_0
+- wheel=0.33.1=py37_0
+- zlib=1.2.11
 - pip:
   - fuzzywuzzy
   - html5lib
